@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HelloWorld_Angular';
+  message:string = "";
+  display(email:HTMLInputElement,pass:HTMLInputElement){
+    this.message = email.value;
+  }
 }
